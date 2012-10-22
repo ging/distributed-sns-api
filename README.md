@@ -20,27 +20,27 @@ Sites offer one activities endpoint for other sites to post their activities. Th
 
 Activities between sites are created posting Activity Streams formated JSON to the activity endpoint:
 
-  POST /activities HTTP/1.1
-  Host: example.com
-  Authorization: Bearer mF.9.B5f-4.1JqM
-  Content-Type: application/json
+	POST /activities HTTP/1.1
+	Host: example.com
+	Authorization: Bearer mF.9.B5f-4.1JqM
+	Content-Type: application/json
 
-  {
-    "id": "http://example.net/activities-n",
-    "actor": {
-        "id": "acct:bob@example.net",
-        "displayName": "Bob",
-        "objectType": "person",
-        "url": "http://example.net/bob"
-    },
-    "verb": "post",
-    "object": {
-        "id": "http://example.net/notes/hello-world",
-        "content": "Hello, World!"
-        "objectType": "note"
-    },
-    "published": "1973-01-01T00:00:00"
-  }
+	{
+		"id": "http://example.net/activities-n",
+		"actor": {
+			"id": "acct:bob@example.net",
+			"displayName": "Bob",
+			"objectType": "person",
+			"url": "http://example.net/bob"
+		},
+		"verb": "post",
+		"object": {
+			"id": "http://example.net/notes/hello-world",
+			"content": "Hello, World!"
+			"objectType": "note"
+		},
+		"published": "1973-01-01T00:00:00"
+	}
 
 ## Authentication
 
