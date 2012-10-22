@@ -22,6 +22,7 @@ Activities between sites are created posting Activity Streams formated JSON to t
 
   POST /activities HTTP/1.1
   Host: example.com
+  Authorization: Bearer mF.9.B5f-4.1JqM
   Content-Type: application/json
 
   {
@@ -43,4 +44,4 @@ Activities between sites are created posting Activity Streams formated JSON to t
 
 ## Authentication
 
-TODO
+Sites are authenticated using OAuth 
